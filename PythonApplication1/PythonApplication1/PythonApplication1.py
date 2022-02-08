@@ -15,3 +15,14 @@ elif dist < 4:
 	print("Хорошо!")
 else:
 	print("Отлично!")
+
+word = input("Введите слово: ")
+def is_palindrome(w):
+	for i in xrange(0, len(w)/2):
+		if w[i] != w[len(w)-i-1]:
+			return False
+	return True
+if is_palindrome(word) == True:
+	print("Слово - палиндром")
+else:
+	print("Слово - не палиндром")
